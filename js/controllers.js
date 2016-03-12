@@ -11,6 +11,14 @@ app.controller('pageCtrl', function($scope, $state, SwapiService) {
 		$scope.people = newVal;
 	});
 
+	SwapiService.getPeople(1, function(numPages) {
+		var pages = [];
+		for (var i = 1; i <= numPages; i++) {
+			pages.push(i);
+		}
+		$scope.pages = pages;
+	});
+
 	$scope.goToPage = function(param) {
 		SwapiService.getPeople(param, function(numPages) {
 			var pages = [];

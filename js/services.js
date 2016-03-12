@@ -16,7 +16,6 @@ app.service('SwapiService', function($http) {
 		$http.get(url)
 		.then((res) => {
 			this.character = res.data;
-			console.log(this.character);
 		}, err => console.error('SwapiService error: ', err));
 	};
 });

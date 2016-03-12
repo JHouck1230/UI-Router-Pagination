@@ -1,13 +1,13 @@
 <nav id='pagination'>
   <ul class="pagination">
     <li>
-      <a ng-click='goToPage(page - 1)' aria-label="Previous">
+      <a ng-click='goToPage(page)' aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
       </a>
     </li>
     <li><a ng-repeat='page in pages' ng-click='goToPage(page)'>{{page}}</a></li>
     <li>
-      <a ng-click='goToPage(page + 1)' aria-label="Next">
+      <a ng-click='goToPage(page)' aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
       </a>
     </li>
