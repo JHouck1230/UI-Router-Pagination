@@ -13,7 +13,9 @@ app.service('SwapiService', function($http) {
 	};
 
 	this.getCharacter = function(url) {
-		$http.get(url)
+		var corUrl = url.slice(4);
+		console.log(corUrl);
+		$http.get(corUrl)
 		.then((res) => {
 			this.character = res.data;
 		}, err => console.error('SwapiService error: ', err));
