@@ -13,7 +13,7 @@ app.service('SwapiService', function($http) {
 	};
 
 	this.getCharacter = function(url) {
-		var corUrl = url.slice(4);
+		var corUrl = 'https' + url.slice(4);
 		console.log(corUrl);
 		$http.get(corUrl)
 		.then((res) => {
