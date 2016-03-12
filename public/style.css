@@ -1,0 +1,64 @@
+body {
+	text-align: center;
+}
+
+html {
+	background-image: url(http://i.imgur.com/4AvKUxn.png?1);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#pagination {
+	text-align: center;
+}
+
+nav#pagination {
+    width: 35%;
+}
+
+.ng-scope {
+  text-align: -webkit-center;
+  background: transparent;
+  margin: auto;
+}
+
+.btn.btn-default{
+	background-color: #FFFFFF;
+}
+
+.page-header {
+  width: 35%;
+  margin: auto;
+}
+
+h2 {
+	color: yellow;
+}
+
+a {
+	cursor: pointer;
+}
+
+a.list-group-item {
+  background: white;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+ul.list-group.ng-scope {
+  width: 50%;
+}
+
+#characterSheet {
+	background-color: #FFFFFF;
+	height: auto;
+	width: 300px;
+	margin: 15px;
+	border-radius: 5px;
+}
+
+.bio {
+	border-bottom: 1px solid black;
+	font-size: 24px;
+}
